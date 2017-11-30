@@ -13,6 +13,7 @@ public class ListServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        PrintWriter printWriter = resp.getWriter();
 //        printWriter.println("Method GET from ListServlet");
+
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("pages/list.jsp");
         requestDispatcher.forward(req, resp);
     }
