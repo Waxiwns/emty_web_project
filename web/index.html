@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Web-Project</title>
+    <link rel="stylesheet" href="styles/w3.css">
 </head>
-<body>
+<body class="w3-light-gray">
 <!-- header -->
-<div>
-    <h1>Start page Web app</h1>
-</div>
-
-<div>       <!-- content -->
-    <div>    <!-- buttons holder -->
-        <button onclick="location.href='/list'">List users</button>
-        <button onclick="location.href='/add'">Add user</button>
+    <div class="w3-container w3-blue-gray w3-opacity w3-right-align">
+        <h1>Start page My Web app</h1>
     </div>
-    <!--<div>   &lt;!&ndash; Link holder &ndash;&gt;-->
-        <!--<a href="/list">List users</a>-->
-        <!--<a href="/add">Add user</a>-->
-    <!--</div>-->
-</div>
+
+    <div>       <!-- content -->
+        <div class="w3-container w3-center">
+            <div class="w3-bar w3-padding-large w3-padding-24">    <!-- buttons holder -->
+                <button class="w3-btn w3-hover-light-blue w3-round-large" onclick="location.href='/list'">List users</button>
+                <button class="w3-btn w3-hover-light-green w3-round-large" onclick="location.href='/add'">Add user</button>
+            </div>
+            <!--<div>   &lt;!&ndash; Link holder &ndash;&gt;-->
+                <!--<a href="/list">List users</a>-->
+                <!--<a href="/add">Add user</a>-->
+            <!--</div>-->
+        </div>
+    </div>
 </body>
 </html>
