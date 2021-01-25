@@ -1,1 +1,1 @@
-war:deploy emty_web_project.war
+java -jar webapp-runner.jar emty_web_project.war
