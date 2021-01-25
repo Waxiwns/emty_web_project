@@ -11,7 +11,14 @@
 
     <div class="w3-container w3-padding">
         <%
-            if (request.getAttribute("userName") != null)
+            if (request.getAttribute("noUser") != null && !(boolean) request.getAttribute("noUser"))
+                out.println("<div class=\"w3-panel w3-green w3-display-container w3-card-4 w3-round\">\n" +
+                        "   <span onclick=\"this.parentElement.style.display='none'\"\n" +
+                        "   class=\"w3-button w3-margin-right w3-display-right w3-round-large w3-hover-green w3-border w3-border-green w3-hover-border-grey\">×</span>\n" +
+                        "   <h5>User '" + request.getAttribute("userName") + "' is already present!</h5>\n" +
+                        "</div>");
+
+            else if (request.getAttribute("userName") != null)
                 out.println("<div class=\"w3-panel w3-green w3-display-container w3-card-4 w3-round\">\n" +
                         "   <span onclick=\"this.parentElement.style.display='none'\"\n" +
                         "   class=\"w3-button w3-margin-right w3-display-right w3-round-large w3-hover-green w3-border w3-border-green w3-hover-border-grey\">×</span>\n" +
