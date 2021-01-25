@@ -1,1 +1,1 @@
-web: sh target/classes/app
+web: java -jar target/webapp-runner.jar
