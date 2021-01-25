@@ -1,1 +1,1 @@
-java -jar webapp-runner.jar emty_web_project.war
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
